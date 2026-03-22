@@ -1,35 +1,41 @@
 # My Discrete Math Repository
 
-## Homework 2 - 202655### (Your ID) HONG GIL DONG
+## Homework 2 - 202655363 이수아
 
 ### 2.1 Equation Editing
-| # | text | formula |
-|---|------|---------|
-| 1 | IF (P AND Q) THEN R | $$P$$|
-| 2 | (P XOR Q) OR R | $$P$$      |
-| 3 | NOT P IFF Q |  $$P$$   |
-| 4 | FOR ALL x, P(x) | $$P$$  |
-| 5 | THERE EXISTS AN x, NOT Q(x) | $$P$$ |
-| 6 | IF P THEN Q EQUIVALENT TO NOT P OR Q | $$P$$ |
-| 7 | Euler's Identity |  $$P$$  |
-| 8 | SUM of n from 1 to 100 Equals 5050 | $$P$$ |
+
+| # | Text | Formula |
+| :-- | :--- | :--- |
+| 1 | IF (P AND Q) THEN R | $(P \land Q) \to R$ |
+| 2 | (P XOR Q) OR R | $(P \oplus Q) \lor R$ |
+| 3 | NOT P IFF Q | $\neg P \leftrightarrow Q$ |
+| 4 | FOR ALL x, P(x) | $\forall x, P(x)$ |
+| 5 | THERE EXISTS AN x, NOT Q(x) | $\exists x, \neg Q(x)$ |
+| 6 | IF P THEN Q EQUIVALENT TO NOT P OR Q | $(P \to Q) \equiv (\neg P \lor Q)$ |
+| 7 | Euler's Identity | $e^{i\pi} + 1 = 0$ |
+| 8 | SUM of n from 1 to 100 Equals 5050 | $\sum_{n=1}^{100} n = 5050$ |
+
 
 ### 2.2 Translation
-Using the propositions 
 
+**Propositions:**
 * $p$ = "I study"
 * $q$ = "I will pass the course"
-* $r$ = "The professor accepts bribes" 
+* $r$ = "The professor accepts bribes"
 
-Translate the following into statements of propositional logic:
+**Translated Statements:**
 
-1. If I do not study, then I will only pass the course if the professor accepts bribes.<br>
-  $$p$$
-2. If the professor accepts bribes, then I do not study.<br>
-  $$p$$
-3. The professor does not accept bribes, but I study and will pass the course.<br>
-  $$p$$
-4. If I study, the professor will accept bribes and I will pass the course.<br>
-  $$p$$
-5. I will not pass the course but the professor accepts bribes.<br>
-  $$p$$
+1. **If I do not study, then I will only pass the course if the professor accepts bribes.**
+   - Formula: $\neg p \to (q \to r)$
+
+2. **If the professor accepts bribes, then I do not study.**
+   - Formula: $r \to \neg p$
+
+3. **The professor does not accept bribes, but I study and will pass the course.**
+   - Formula: $\neg r \land (p \land q)$
+
+4. **If I study, the professor will accept bribes and I will pass the course.**
+   - Formula: $p \to (r \land q)$
+
+5. **I will not pass the course but the professor accepts bribes.**
+   - Formula: $\neg q \land r$
